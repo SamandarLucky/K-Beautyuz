@@ -8,7 +8,10 @@ st.markdown("### Korean Cosmetics & Skincare")
 st.markdown("Discover the best of K-beauty with our curated selection of products that nourish your skin and enhance your natural beauty.")
 
 def display_product(image_path, name, price):
-    st.image(image_path, use_container_width=True)
+    try:
+        st.image(image_path, use_container_width=True)
+    except Exception as e:
+        st.warning(f"Image not found: {image_path}")
     st.write(f"**{name}**")
     st.write(f"Price: {price} 🇺🇿UZS")
 
@@ -118,4 +121,4 @@ with col6:
 with col7:
     display_product("images/product44.jpg", "Vita Halo Pomegranate Collagen 30sticks", "189.000")
 with col8:
-    display_product("images/product45.jpg", "Vivilab Goodnight Low Molecular Collagen 50sticks 1stick -  12gm, 50sticks ", "299.000")
+    display_product("images/product45.jpg", "Vivilab Goodnight Low Molecular Collagen 50sticks 1stick -  12gm, 50sticks", "299.000")
