@@ -13,9 +13,8 @@ def display_product(image_path, name, price):
     st.write(f"Price: {price} 🇺🇿UZS")
 
 
-# --- Face Care ---
 st.markdown("## 🌿 Skin Care")
-col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col15 = st.columns(12)
+col1, col2, col3, col4, col5, col6, col7, col8, col9, col10, col11, col15,col16, col17 = st.columns(14)
 with col1:
     display_product("images/product1.jpg", "d'Alba - Waterfull mild sun cream 50ml", "214.900")
 with col2:
@@ -40,9 +39,13 @@ with col11:
         display_product("images/product23.jpg", "Missha Vita C Plus Ampoule 33%", "349.000")
 with col15:    
     display_product("images/product29.jpg", "Dr.G Brightening Peeling Gel 150ml", "259.000")
-# --- Skin Care ---
+with col16:
+    display_product("images/product37.jpg", "TONYMOLY WONDER Apricot Seed Cleansing Oil ", "249.000")
+with col17:
+    display_product("images/product40.jpg", "Daily My Family Sun Cream 120gm", "169.000")
+
 st.markdown("## 🌸 Face Care")
-col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14 = st.columns(11)
+col4, col5, col6, col7, col8, col9, col10, col11, col12, col13, col14, col15, col16 = st.columns(13)
 with col4:
     display_product("images/product11.jpg", "Shingmulwon - Botanical Garden Aloe Fresh Soothing Big Foam Cleanser", "170.000")
 with col5:
@@ -65,7 +68,10 @@ with col13:
     display_product("images/product20.jpg", "LABIOTTE Collagen Tone Up Cream ", "209.000")
 with col14:
     display_product("images/product21.jpg", " BAGEL Eyelash Serum", "139.000")
-
+with col15:
+    display_product("images/product36.jpg", "TONYMOLY 24K Gold Snail Cleansing Oil Gel", "259.000")
+with col16:
+    display_product("images/product46.jpg", "Daymellow Vita Ferol 23", "289.000")
 # --- Hair Care ---
 st.markdown("## 💇 Hair Care")
 col7, col8, col9, col10, col11, col12, col13, col14, col15, col16, col17, col18 = st.columns(12)
@@ -93,3 +99,23 @@ with col17:
     display_product("images/product34.jpg", "Jay Forest Purple Jay Water Glow Protein Hair Essence 100ml", "199.000")
 with col18: 
     display_product("images/product35.jpg", "Mise en scene Perfect Base Up Hair Essence 200ml", "149.000")
+
+
+st.markdown("## Health Care - Collagens")
+col1, col2, col3, col4, col5, col6, col7, col8 = st.columns(8)
+with col1:
+    display_product("images/product38.jpg", "LactoFit Diet", "349.000")
+with col2:              
+    display_product("images/product39.jpg", "Collagen Stick Mix Package 1stick - 25gr, 45sticks", "469.000")
+with col3:
+    display_product("images/product47.jpg", "SANGA PROBIO 30sticks", "179.000")
+with col4:
+    display_product("images/product41.jpg", "SANGA PROBIO & GLUTATHIONE 30sticks", "469.000")
+with col5:
+    display_product("images/product42.jpg", "Small Molecular Fish Collagen Peptide", "329.000")
+with col6:
+    display_product("images/product43.jpg", "저분자 콜라겐 C (BOTO brand)", "435.000")
+with col7:
+    display_product("images/product44.jpg", "Vita Halo Pomegranate Collagen 30sticks", "189.000")
+with col8:
+    display_product("images/product45.jpg", "Vivilab Goodnight Low Molecular Collagen 50sticks 1stick -  12gm, 50sticks ", "299.000")
